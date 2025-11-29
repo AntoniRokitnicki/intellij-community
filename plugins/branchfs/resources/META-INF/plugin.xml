@@ -1,0 +1,20 @@
+<idea-plugin>
+  <id>com.yourorg.branchfs</id>
+  <name>BranchFS</name>
+  <vendor>yourorg</vendor>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.vcs</depends>
+  <depends>Git4Idea</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <treeStructureProvider implementation="com.yourorg.branchfs.ui.BranchSiblingsProvider"/>
+    <startupActivity implementation="com.yourorg.branchfs.init.BranchFsInitializer"/>
+  </extensions>
+
+  <actions>
+    <action id="com.yourorg.branchfs.actions.BranchCompareWithCurrentAction"
+            class="com.yourorg.branchfs.actions.BranchCompareWithCurrentAction"
+            text="Compare with Current" />
+  </actions>
+</idea-plugin>
