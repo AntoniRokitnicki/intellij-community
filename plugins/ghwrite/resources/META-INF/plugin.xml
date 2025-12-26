@@ -1,0 +1,24 @@
+<idea-plugin>
+  <id>com.yourorg.ghwrite</id>
+  <name>GitHub Write (gh)</name>
+  <vendor email="dev@yourorg.com">YourOrg</vendor>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="GitHub Write"
+                anchor="left"
+                factoryClass="com.yourorg.ghwrite.ui.GhWriteToolWindowFactory"
+                icon="AllIcons.Vcs.Vendors.Github"/>
+  </extensions>
+
+  <actions>
+    <action id="com.yourorg.ghwrite.Open"
+            class="com.yourorg.ghwrite.ui.actions.OpenGhWriteToolWindowAction"
+            text="Open GitHub Write Tool Window"
+            description="Open write-enabled GitHub forms via gh CLI"
+            icon="AllIcons.Vcs.Vendors.Github">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+</idea-plugin>

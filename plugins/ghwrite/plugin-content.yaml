@@ -1,0 +1,3 @@
+- name: lib/ghwrite.jar
+  modules:
+  - name: intellij.ghwrite

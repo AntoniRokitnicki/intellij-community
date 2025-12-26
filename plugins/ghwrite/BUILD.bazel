@@ -1,0 +1,32 @@
+load("//build:compiler-options.bzl", "create_kotlinc_options")
+load("@rules_jvm//:jvm.bzl", "jvm_library", "jvm_resources")
+
+create_kotlinc_options(
+  name = "custom_ghwrite",
+  x_explicit_api_mode = "strict",
+)
+
+jvm_resources(
+  name = "ghwrite_resources",
+  files = glob(["resources/**/*"]),
+  strip_prefix = "resources",
+)
+
+jvm_library(
+  name = "ghwrite",
+  module_name = "intellij.ghwrite",
+  visibility = ["//visibility:public"],
+  srcs = glob(["src/**/*.kt", "src/**/*.java", "src/**/*.form"], allow_empty = True),
+  kotlinc_opts = ":custom_ghwrite",
+  deps = [
+    "//platform/util",
+    "//platform/core-api:core",
+    "//platform/platform-api:ide",
+    "//platform/platform-impl:ide-impl",
+    "//platform/lang-api:lang",
+    "//platform/lang-impl",
+    "//platform/core-ui",
+    "//platform/editor-ui-api:editor-ui",
+  ],
+  runtime_deps = [":ghwrite_resources"],
+)
