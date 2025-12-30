@@ -1,0 +1,12 @@
+<idea-plugin>
+  <id>methods</id>
+  <name>Methods VFS and Scopes</name>
+  <vendor>JetBrains</vendor>
+  <description>Provides methods:// virtual files and method-based named scopes.</description>
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <customScopesProvider implementation="com.intellij.methods.MethodsScopeProvider"/>
+    <startupActivity implementation="com.intellij.methods.MethodsVfsInitializer"/>
+  </extensions>
+</idea-plugin>

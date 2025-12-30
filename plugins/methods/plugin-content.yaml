@@ -1,0 +1,3 @@
+- name: lib/methods.jar
+  modules:
+    - name: intellij.methods
