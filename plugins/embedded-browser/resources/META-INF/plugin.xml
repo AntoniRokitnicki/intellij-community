@@ -1,0 +1,26 @@
+<idea-plugin>
+  <id>com.example.embeddedbrowser</id>
+  <name>Embedded Browser (JCEF)</name>
+  <vendor email="dev@example.com">Example</vendor>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="Browser"
+                anchor="right"
+                factoryClass="com.example.embeddedbrowser.ui.BrowserToolWindowFactory"
+                icon="AllIcons.General.Web"/>
+    <applicationService serviceImplementation="com.example.embeddedbrowser.net.IdeSchemeRegistrar"/>
+  </extensions>
+
+  <actions>
+    <action id="com.example.embeddedbrowser.OpenBrowser"
+            class="com.example.embeddedbrowser.ui.actions.OpenBrowserAction"
+            text="Open Embedded Browser"
+            description="Open the JCEF-based embedded browser tool window"
+            icon="AllIcons.General.Web">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+  </actions>
+</idea-plugin>
