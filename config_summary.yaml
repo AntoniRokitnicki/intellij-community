@@ -1,0 +1,213 @@
+configurations:
+  .:
+    count: 4
+    samples:
+      - intellij.yaml
+      - test-log.properties
+      - qodana.yaml
+      - build.xml
+  .idea:
+    count: 312
+    samples:
+      - .idea/kotlinc.xml
+      - .idea/projectCodeStyle.xml
+      - .idea/modules.xml
+      - .idea/gant_config.xml
+      - .idea/compiler.xml
+  RegExpSupport:
+    count: 2
+    samples:
+      - RegExpSupport/resources/messages/RegExpBundle.properties
+      - RegExpSupport/resources/META-INF/RegExpPlugin.xml
+  bin:
+    count: 1
+    samples:
+      - bin/idea.properties
+  build:
+    count: 10
+    samples:
+      - build/update.xml
+      - build/restApiDocGenerator/apidoc.json
+      - build/restApiDocGenerator/package.json
+      - build/dependencies/dependencies.properties
+      - build/dependencies/runtime.properties
+  commandInterface:
+    count: 2
+    samples:
+      - commandInterface/resources/messages/CommandInterfaceBundle.properties
+      - commandInterface/src/intellij.commandInterface.xml
+  community-resources:
+    count: 2
+    samples:
+      - community-resources/resources/idea/IdeaApplicationInfo.xml
+      - community-resources/resources/META-INF/IdeaPlugin.xml
+  docs:
+    count: 5
+    samples:
+      - docs/dist-visualizer/pnpm-lock.yaml
+      - docs/dist-visualizer/package.json
+      - docs/plugin-graph/plugin-graph.json
+      - docs/plugin-graph/pnpm-lock.yaml
+      - docs/plugin-graph/package.json
+  idea:
+    count: 1
+    samples:
+      - idea/customization/base/resources/intellij.idea.customization.base.xml
+  images:
+    count: 5
+    samples:
+      - images/intellij.platform.images.copyright/resources/intellij.platform.images.copyright.xml
+      - images/backend.svg/resources/intellij.platform.images.backend.svg.xml
+      - images/resources/ImagesIconMappings.json
+      - images/resources/messages/ImagesBundle.properties
+      - images/resources/META-INF/plugin.xml
+  java:
+    count: 959
+    samples:
+      - java/plugin/resources/META-INF/java-copyright.xml
+      - java/plugin/resources/META-INF/plugin.xml
+      - java/java-frontback-impl/resource/intellij.java.frontback.impl.xml
+      - java/remote-servers/impl/src/intellij.java.remoteServers.impl.xml
+      - java/typeMigration/resources/messages/TypeMigrationBundle.properties
+  jps:
+    count: 72
+    samples:
+      - jps/antLayout/src/jetbrains/antlayout/antlib.xml
+      - jps/model-serialization/testData/config/optionsAfterChange/path.macros.xml
+      - jps/model-serialization/testData/config/options/filetypes.xml
+      - jps/model-serialization/testData/config/options/jdk.table.xml
+      - jps/model-serialization/testData/config/options/path.macros.xml
+  json:
+    count: 476
+    samples:
+      - json/resources/intellij.json.xml
+      - json/resources/jsonSchema/vocabularies/2020-12/content.json
+      - json/resources/jsonSchema/vocabularies/2020-12/validation.json
+      - json/resources/jsonSchema/vocabularies/2020-12/applicator.json
+      - json/resources/jsonSchema/vocabularies/2020-12/core.json
+  jupyter:
+    count: 5
+    samples:
+      - jupyter/viewOnly/resources/intellij.jupyter.viewOnly.xml
+      - jupyter/resources/JupyterCoreIconMappings.json
+      - jupyter/resources/intellij.jupyter.core.xml
+      - jupyter/resources/messages/JupyterPsiBundle.properties
+      - jupyter/resources/META-INF/jupyter-core.xml
+  jvm:
+    count: 14
+    samples:
+      - jvm/jvm-analysis-impl/resources/messages/JvmAnalysisBundle.properties
+      - jvm/jvm-analysis-impl/resources/META-INF/JvmAnalysisPlugin.xml
+      - jvm/jvm-analysis-kotlin-tests/testData/codeInspection/emptyMethod/basic/expected.xml
+      - jvm/jvm-analysis-kotlin-tests/testData/codeInspection/redundantRequires/stdlib/expected.xml
+      - jvm/jvm-analysis-java-tests/testData/codeInspection/emptyMethod/superCallByRange/expected.xml
+  lib:
+    count: 64
+    samples:
+      - lib/annotations/jsoup/org/jsoup/annotations.xml
+      - lib/annotations/jsoup/org/jsoup/parser/annotations.xml
+      - lib/annotations/jsoup/org/jsoup/nodes/annotations.xml
+      - lib/annotations/jsoup/org/jsoup/helper/annotations.xml
+      - lib/annotations/ion/com/amazon/ion/annotations.xml
+  libraries:
+    count: 5
+    samples:
+      - libraries/ktor-client/resources/intellij.libraries.ktor.client.xml
+      - libraries/microba/resources/intellij.libraries.microba.xml
+      - libraries/microba/src/com/michaelbaranov/microba/calendar/DefaultCalendarResources.properties
+      - libraries/grpc/resources/intellij.libraries.grpc.xml
+      - libraries/grpc-netty-shaded/resources/intellij.libraries.grpc.netty.shaded.xml
+  native:
+    count: 11
+    samples:
+      - native/XPlatLauncher/resources/product_info_macos.json
+      - native/XPlatLauncher/resources/product_info_windows.json
+      - native/XPlatLauncher/resources/product_info_linux.json
+      - native/XPlatLauncher/resources/TestProject/gradle.properties
+      - native/XPlatLauncher/resources/TestProject/gradle/wrapper/gradle-wrapper.properties
+  notebooks:
+    count: 3
+    samples:
+      - notebooks/notebook-ui/resources/intellij.notebooks.ui.xml
+      - notebooks/visualization/resources/intellij.notebooks.visualization.xml
+      - notebooks/visualization/resources/messages/VisualizationBundle.properties
+  platform:
+    count: 885
+    samples:
+      - platform/duplicates-analysis/resources/messages/DupLocatorBundle.properties
+      - platform/duplicates-analysis/resources/META-INF/duplicates-analysis.xml
+      - platform/remoteDev-util/resources/messages/RemoteDevUtilBundle.properties
+      - platform/remoteDev-util/resources/META-INF/RemoteDevUtil.xml
+      - platform/remote-servers/impl/resources/intellij.platform.remoteServers.impl.xml
+  plugins:
+    count: 3078
+    samples:
+      - plugins/testng/testSources/testng.xml
+      - plugins/testng/testData/inspection/undeclaredTests/commented/expected.xml
+      - plugins/testng/testData/inspection/undeclaredTests/commented/ext_src/testng.xml
+      - plugins/testng/testData/inspection/undeclaredTests/commented1/expected.xml
+      - plugins/testng/testData/inspection/undeclaredTests/commented1/ext_src/testng.xml
+  python:
+    count: 167
+    samples:
+      - python/build.xml
+      - python/python-markdown/resources/intellij.python.markdown.xml
+      - python/huggingFace/resources/intellij.python.community.impl.huggingFace.xml
+      - python/huggingFace/resources/messages/PyHuggingFaceBundle.properties
+      - python/pluginMinor/intellij.python.community.plugin.minor.xml
+  resources:
+    count: 3
+    samples:
+      - resources/src/ClassTemplateManager.xml
+      - resources/src/idea/JavaActions.xml
+      - resources/src/liveTemplates/Java.xml
+  resources-en:
+    count: 1
+    samples:
+      - resources-en/resources/search/searchableOptions.xml
+  spellchecker:
+    count: 11
+    samples:
+      - spellchecker/testData/inspection/propertiesWithMistakes/test.properties
+      - spellchecker/testData/inspection/quickfixes/simpleWordChangeTo.xml
+      - spellchecker/testData/inspection/quickfixes/simpleWordChangeTo.after.xml
+      - spellchecker/testData/inspection/quickfixes/injectionChangeTo.after.xml
+      - spellchecker/testData/inspection/quickfixes/injectionChangeTo.xml
+  tools:
+    count: 12
+    samples:
+      - tools/devLauncher/tests/testData/moduleResourceFinderProject/.idea/modules.xml
+      - tools/intellij.tools.ide.metrics.collector/gradle/wrapper/gradle-wrapper.properties
+      - tools/intellij.tools.ide.metrics.collector/testResources/opentelemetry/opentelemetry.json
+      - tools/intellij.tools.ide.metrics.collector/testResources/opentelemetry/opentelemetry_with_max_mean_attributes.json
+      - tools/intellij.tools.ide.metrics.collector/testResources/opentelemetry/opentelemetry_with_zero_values.json
+  updater:
+    count: 6
+    samples:
+      - updater/gradle/wrapper/gradle-wrapper.properties
+      - updater/testData/bin/idea.properties
+      - updater/resources/messages/UpdaterBundle_ja.properties
+      - updater/resources/messages/UpdaterBundle.properties
+      - updater/resources/messages/UpdaterBundle_zh_CN.properties
+  xml:
+    count: 928
+    samples:
+      - xml/dom-openapi/resources/messages/XmlDomBundle.properties
+      - xml/dom-tests/testData/stubs/inclusion.xml
+      - xml/dom-tests/testData/stubs/foo.xml
+      - xml/dom-tests/testData/stubs/incompleteAttribute.xml
+      - xml/dom-tests/testData/stubs/parent.xml
+packages:
+  com.intellij: 38940
+  org.jetbrains: 16743
+  com.jetbrains: 3665
+  com.siyeh: 2924
+  test: 2295
+  org.intellij: 1483
+  foo: 858
+  a: 656
+  p: 459
+  one.two: 424
+summary:
+  total_packages: 1565
+  total_classes: 253957
