@@ -1,0 +1,15 @@
+<idea-plugin>
+  <id>org.intellij.samples.embeddedbrowser</id>
+  <name>Embedded Browser</name>
+  <vendor>JetBrains</vendor>
+  <description>Tool window demonstrating an embedded JCEF browser.</description>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="Embedded Browser"
+                factoryClass="org.intellij.samples.embeddedbrowser.EmbeddedBrowserToolWindowFactory"
+                anchor="bottom"
+                canCloseContent="false"/>
+  </extensions>
+</idea-plugin>

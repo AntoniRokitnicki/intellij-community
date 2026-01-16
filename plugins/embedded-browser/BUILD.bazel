@@ -1,0 +1,28 @@
+### auto-generated section `build intellij.embedded.browser` start
+load("@rules_jvm//:jvm.bzl", "jvm_library", "jvm_resources")
+
+jvm_resources(
+  name = "embedded_browser_resources",
+  files = glob(["resources/**/*"]),
+  strip_prefix = "resources"
+)
+
+jvm_library(
+  name = "embedded_browser",
+  module_name = "intellij.embedded.browser",
+  visibility = ["//visibility:public"],
+  srcs = glob(["src/**/*.kt", "src/**/*.java", "src/**/*.form"], allow_empty = True),
+  deps = [
+    "@lib//:kotlin-stdlib",
+    "//platform/platform-api:ide",
+    "//platform/platform-impl:ide-impl",
+    "//platform/ui.jcef:ui.jcef",
+    "//platform/core-api:core",
+    "//platform/core-impl",
+    "//platform/util",
+    "//platform/util-ex",
+    "//platform/core-ui",
+  ],
+  runtime_deps = [":embedded_browser_resources"]
+)
+### auto-generated section `build intellij.embedded.browser` end
