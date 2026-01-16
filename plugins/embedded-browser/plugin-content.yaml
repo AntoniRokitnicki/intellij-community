@@ -1,0 +1,3 @@
+- name: lib/embedded-browser.jar
+  modules:
+  - name: intellij.embedded.browser

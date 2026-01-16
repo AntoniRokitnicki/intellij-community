@@ -1,0 +1,14 @@
+<idea-plugin>
+  <id>org.intellij.examples.embeddedBrowser</id>
+  <name>Embedded Browser Tool</name>
+  <vendor>Example</vendor>
+  <description>Tool window showcasing an embedded Chromium-based browser.</description>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="Embedded Browser"
+                factoryClass="org.intellij.examples.browser.BrowserToolWindowFactory"
+                anchor="right"/>
+  </extensions>
+</idea-plugin>
