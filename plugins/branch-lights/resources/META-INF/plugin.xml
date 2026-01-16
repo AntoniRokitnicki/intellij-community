@@ -1,0 +1,14 @@
+<idea-plugin>
+  <id>com.yourorg.branchlights</id>
+  <name>Branch Lights</name>
+  <vendor email="dev@yourorg.com">YourOrg</vendor>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.vcs</depends>
+  <depends>Git4Idea</depends>
+  <depends>com.intellij.modules.diff</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <statusBarWidgetFactory implementation="com.yourorg.branchlights.BranchLightsFactory"/>
+  </extensions>
+</idea-plugin>
